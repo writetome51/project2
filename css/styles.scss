@@ -1,0 +1,177 @@
+/* Defaults  */
+body, html {
+	width:100%;  height:auto;
+}
+
+body, html, section, div, header, img, form {
+	padding:0;  margin:0; outline:0;
+}
+
+body, p{
+	font-family:Futura, serif;  font-size:15px;
+}
+
+section, div {position:relative;}
+
+/*  Make all divs visible.  Only for debugging your layout:
+div{border:1px solid;}
+*/
+
+
+header, footer{text-align: center;}
+
+header{ font-weight: bold;}
+
+
+table, tr, td {
+	border:1px solid lightgrey;  border-collapse:collapse;
+	text-align: center;
+}
+td{padding:5px;}
+
+th{padding:15px;}
+
+a{text-decoration:none; padding:0; margin:0;}
+
+a:hover{text-decoration: none;}
+
+
+
+/* classes  */
+
+.flex-container, .table-and-header {display:inline-flex;}
+
+.table-and-header {margin-bottom:25px;}
+
+.bottom-margin {margin-bottom: 15px;}
+
+
+
+.table-header{
+	font-size:30px;  margin-bottom:10px;  text-align: center;
+}
+
+
+.mydiv{
+	/*
+	width:100px;  height:100px;
+	background-color: purple;
+	text-align:center;
+	animation-name:test;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+	animation-timing-function: ease;
+	border-radius: 50%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	*/
+	background-color: aqua;
+}
+
+@keyframes test{
+	/*
+	from{width:100px;  background-color: blue;}
+	to{width:500px;  background-color: purple;}
+	*/
+
+	0%{background-color:yellow;  transform:rotate(0deg);}
+	25%{background-color:blue;}
+	50%{background-color:green;}
+	75%{background-color:red;}
+	100%{background-color:orange; transform:rotate(360deg)}
+}
+
+
+
+
+
+
+.banner{
+	font-size: 38px;  padding:20px;
+	background-color: #e8e8e8;
+	text-align: center;
+}
+
+
+
+.large-text{font-size:36px;}
+
+
+@media only screen and (max-width:400px){
+	.large-text{font-size: 24px;}
+}
+
+
+
+.header{display:flex;  justify-content:space-between;}
+
+.mainsection{
+	display:flex;  justify-content: space-between; width:100%;
+}
+
+.mainleft span{font-size: 40px;  color:white;}
+
+.mainleft{flex-grow:1; }
+.mainright{flex-grow:2;}
+
+.article{padding:15px;  margin-bottom:20px;}
+
+.logobox img{width:130px;}
+
+.temp-header{text-align: left;}
+
+.top-banner-link{color:black;}
+
+.category-image-container{
+	width:90px;
+	margin-left:3px;
+	margin-right: 3px; text-align: center;
+}
+
+.category-image{display:block; margin:auto;  margin-bottom: 3px;}
+
+.centered-block{width:85%;  margin:auto;}
+
+.table-and-header{margin:auto;}
+
+.table-and-header table{margin-left:5%}
+
+#ice-t-shirt{margin:auto;  margin-bottom:0;}
+
+#selfie{
+	margin-right: 15px;  width:780px;height:474px;
+	background-image: url("../images/selfie.jpg")
+}
+
+#selfie-text{
+	color:white;position: relative;top:400px; text-align: center;
+}
+
+#top-container{padding:4px; max-width: 900px; margin:auto;}
+
+
+#top-banner{
+	margin-bottom:20px;
+}
+
+#bottom-banner{
+	font-size: 12px; margin-top:30px;
+}
+
+#categories-and-main{margin-left:0;padding-left: 0;  height:auto;}
+
+#categories{
+	display:flex;
+	justify-content: center;
+	margin:auto;
+	margin-top: 25px;
+}
+
+#main{display:block;  padding:0; margin:0;  text-align:center;}
+
+#top-banner-greeting{margin:0}
+
+#first-name{margin-right:15px;}
