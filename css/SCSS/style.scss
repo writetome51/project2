@@ -1,0 +1,19 @@
+.container{
+  width:100%;  height:20px;
+  .navigation{
+    color:#cccccc;
+  }
+}
+
+.test{color:black;width:100px;}
+
+.inheritance-test{
+  @extend .test;
+}
+
+
+div{
+  p{
+    code{color:blue;}
+  }
+}
