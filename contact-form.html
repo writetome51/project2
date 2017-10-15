@@ -12,69 +12,27 @@
 <body>
 
 <div id="top-container">
-    <section class="banner" id="top-banner">
-        <header><a class="top-banner-link"  href="index.html">ICE-TEES</a></header>
-        <a class="top-banner-link" href="index.html">
-            <img id="ice-t-shirt" src="images/ice-t-shirt.png"
-                 width="125" height="125" alt="Ice-T shirt" />
-        </a>
-        <p id="top-banner-greeting">Drop a Line.</p>
-    </section>
 
+    <div class="container-fluid">
 
-    <section id="categories-and-main">
-
-        <div class="centered-block">
-
-            <div id="main">
-                <form method="post">
-                    <div id="first-and-last-name" class="bottom-margin  flex-container">
-                        <div id="first-name">
-                            <label for="firstName">First Name: </label>
-                            <input name="firstName"  id="firstName">
-                        </div>
-
-                        <div id="last-name">
-                            <label for="lastName">Last Name: </label>
-                            <input name="lastName"   id="lastName">
-                        </div>
-
-                    </div>
-
-                    <div class="bottom-margin">
-
-
-                        <label for="email" >Email: </label>
-                        <input  type="email"  name="email" id="email">
-                    </div>
-
-
-                    <div class="bottom-margin">
-
-                    </div>
-
-                    <div class="bottom-margin">
-                        <textarea name="message" rows="7" cols="45"></textarea>
-                    </div>
-
-                    <div class="bottom-margin">
-                        <input type="submit"  value="Submit">
-                    </div>
-
-                </form>
-
-            </div>
-
-
+        <div class="row  banner"  id="top-banner">
+            <section  w3-include-html="fragments/_top-banner.html"></section>
+            <p id="top-banner-greeting">Drop a Line.</p>
         </div>
 
-    </section>
 
-    <section class="banner" id="bottom-banner">
-        <footer>
-            copyright 2017 by Ice-T and Samuel V. Goldenblum
-        </footer>
-    </section>
+        <div class="row" id="categories-and-main"
+             w3-include-html="fragments/_contact-form_categories-and-main.html">
+        </div>
+
+
+
+        <div class="row  banner"  id="bottom-banner"
+             w3-include-html="fragments/_bottom-banner.html">
+        </div>
+
+    </div>
+
 
 </div>
 

@@ -12,46 +12,25 @@
 <body>
 
 <div id="top-container">
-    <section class="banner" id="top-banner">
-        <header><a class="top-banner-link"  href="index.html">ICE-TEES</a></header>
-        <a class="top-banner-link" href="index.html">
-            <img id="ice-t-shirt" src="images/ice-t-shirt.png"
-                 width="125" height="125" alt="Ice-T shirt" />
-        </a>
-        <p id="top-banner-greeting">You like cereal.</p>
-    </section>
 
+    <div class="container-fluid">
 
-    <section id="categories-and-main">
-
-        <div class="centered-block">
-            <img class="category-image" src="images/capn-crunch-thumb.jpeg"
-                 width="100" height="100" alt="Capn Crunch"/>
-
-            <div id="main">
-                <form method="post">
-                    <div class="bottom-margin">
-                        <label id="quantity" for="quantity">Quantity: </label>
-                        <input type="number"  value="1">
-                    </div>
-                    <div class="bottom-margin">
-                        <input type="submit"  value="Buy">
-                    </div>
-
-                </form>
-
-            </div>
-
-
+        <div class="row  banner"  id="top-banner">
+            <section  w3-include-html="fragments/_top-banner.html"></section>
+            <p id="top-banner-greeting">You like cereal.</p>
         </div>
 
-    </section>
+        <div class="row"  id="categories-and-main"
+             w3-include-html="fragments/_cereal_categories-and-main.html">
+        </div>
 
-    <section class="banner" id="bottom-banner">
-        <footer>
-            copyright 2017 by Ice-T and Samuel V. Goldenblum
-        </footer>
-    </section>
+
+        <div class="row  banner"  id="bottom-banner"
+             w3-include-html="fragments/_bottom-banner.html">
+        </div>
+
+    </div>
+
 
 </div>
 

@@ -135,7 +135,9 @@ a:hover{text-decoration: none;}
 
 .centered-block{width:85%;  margin:auto;}
 
+.table-and-header{margin:auto;}
 
+.table-and-header table{margin-left:5%}
 
 #ice-t-shirt{margin:auto;  margin-bottom:0;}
 
