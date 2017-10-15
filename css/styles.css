@@ -141,7 +141,7 @@ a:hover{text-decoration: none;}
 
 #selfie{
 	margin-right: 15px;  width:780px;height:474px;
-	background-image: url("images/selfie.jpg")
+	background-image: url("../images/selfie.jpg")
 }
 
 #selfie-text{
