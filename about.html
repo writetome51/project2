@@ -7,58 +7,38 @@
     <script src="js/w3.js"></script>
     <title>Ice-Tees | T-Shirts | About Us</title>
 </head>
+
 <body>
+
 <div id="top-container">
-    <section class="banner" id="top-banner">
-        <header><a class="top-banner-link"  href="index.html">ICE-TEES</a></header>
-        <a class="top-banner-link" href="index.html">
-            <img id="ice-t-shirt" src="images/ice-t-shirt.png"
-                width="125" height="125" alt="Ice-T shirt" />
-        </a>
-        <p id="top-banner-greeting">Whatcha Wanna Know?</p>
-    </section>
 
+    <div class="container-fluid">
 
-    <section id="categories-and-main">
-
-        <div class="centered-block">
-
-            <div id="main">
-                <p>
-                    You gettin snoopy on my organization?
-                    I'll tell you this:
-                </p>
-
-                <p>
-                    We buy from textile mills in Malaysia.  No child labor though.
-                    We don't play that.
-                </p>
-
-                <p>
-                    Want to know if we got your favorite shirts in stock?
-                    Check out the <a href="t-shirt-inventory.html">inventory.</a>
-                </p>
-
-                <p>
-                    I you got the time, fill out the
-                    <a href="contact-form.html">
-                        Contact Form.
-                    </a>  I'd love to hear from ya.
-                </p>
-            </div>
-
+        <div class="row banner" id="top-banner">
+            <section  w3-include-html="fragments/_top-banner.html"></section>
+            <p id="top-banner-greeting">Whatcha Wanna Know?</p>
         </div>
 
-    </section>
 
-    <section class="banner" id="bottom-banner">
-        <footer>
-            copyright 2017 by Ice-T and Samuel V. Goldenblum
-        </footer>
-    </section>
+        <div class="row"  id="categories-and-main"
+             w3-include-html="fragments/_about_categories-and-main.html">
+        </div>
+
+
+        <div class="row  banner"  id="bottom-banner"
+             w3-include-html="fragments/_bottom-banner.html">
+        </div>
+
+    </div>
+
 
 </div>
 
+<script>
+    w3.includeHTML();
+</script>
 
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="css/bootstrap-3_3_7/js/bootstrap.min.js"></script>
 </body>
 </html>
