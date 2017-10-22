@@ -1,11 +1,4 @@
 /* Defaults  */
-body, html {
-	width:100%;  height:auto;
-}
-
-body, html, section, div, header, img, form {
-	padding:0;  margin:0; outline:0;
-}
 
 body, p{
 	font-family:Futura, serif;  font-size:15px;
@@ -18,7 +11,8 @@ div{border:1px solid;}
 */
 
 
-header, footer{text-align: center;}
+header, footer, section, div, a{text-align: center;}
+
 
 header{ font-weight: bold;}
 
@@ -29,9 +23,9 @@ table, tr, td {
 }
 td{padding:5px;}
 
-th{padding:15px;}
+th{padding:15px; text-align: center;}
 
-a{text-decoration:none; padding:0; margin:0;}
+a{text-decoration:none;}
 
 a:hover{text-decoration: none;}
 
@@ -43,50 +37,13 @@ a:hover{text-decoration: none;}
 
 .table-and-header {margin-bottom:25px;}
 
-.bottom-margin {margin-bottom: 15px;}
+.bottom-margin, .category-image {margin-bottom: 15px;}
 
 
 
 .table-header{
 	font-size:30px;  margin-bottom:10px;  text-align: center;
 }
-
-
-.mydiv{
-	/*
-	width:100px;  height:100px;
-	background-color: purple;
-	text-align:center;
-	animation-name:test;
-	animation-duration:4s;
-	animation-iteration-count: infinite;
-	animation-direction:alternate;
-	animation-timing-function: ease;
-	border-radius: 50%;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	color:#fff;
-	*/
-	background-color: aqua;
-}
-
-@keyframes test{
-	/*
-	from{width:100px;  background-color: blue;}
-	to{width:500px;  background-color: purple;}
-	*/
-
-	0%{background-color:yellow;  transform:rotate(0deg);}
-	25%{background-color:blue;}
-	50%{background-color:green;}
-	75%{background-color:red;}
-	100%{background-color:orange; transform:rotate(360deg)}
-}
-
-
-
-
 
 
 .banner{
@@ -96,14 +53,7 @@ a:hover{text-decoration: none;}
 }
 
 
-
 .large-text{font-size:36px;}
-
-
-@media only screen and (max-width:400px){
-	.large-text{font-size: 24px;}
-}
-
 
 
 .header{display:flex;  justify-content:space-between;}
@@ -114,30 +64,20 @@ a:hover{text-decoration: none;}
 
 .mainleft span{font-size: 40px;  color:white;}
 
-.mainleft{flex-grow:1; }
-.mainright{flex-grow:2;}
-
-.article{padding:15px;  margin-bottom:20px;}
-
-.logobox img{width:130px;}
-
-.temp-header{text-align: left;}
 
 .top-banner-link{color:black;}
 
-.category-image-container{
-	width:90px;
-	margin-left:3px;
-	margin-right: 3px; text-align: center;
-}
 
-.category-image{display:block; margin:auto;  margin-bottom: 3px;}
 
 .centered-block{width:85%;  margin:auto;}
 
 .table-and-header{margin:auto;}
 
 .table-and-header table{margin-left:5%}
+
+.qty-input{width:50px;}
+
+
 
 #ice-t-shirt{margin:auto;  margin-bottom:0;}
 
@@ -167,10 +107,12 @@ a:hover{text-decoration: none;}
 	display:flex;
 	justify-content: center;
 	margin:auto;
-	margin-top: 25px;
+	margin-top: 10px;
+
+	div.thumbnail{border:none;}
 }
 
-#main{display:block;  padding:0; margin:0;  text-align:center;}
+#main{display:block;  padding:0; margin:0; margin-bottom: 20px; text-align:center;}
 
 #top-banner-greeting{margin:0}
 
