@@ -1,13 +1,20 @@
 /* Defaults  */
 
+$defaultTextAlignment: center;
+$defaultFontFamily:Futura, serif;
+$defaultFontSize:15px;
+
 body, p{
-	font-family:Futura, serif;  font-size:15px;
+	font-family:$defaultFontFamily;  font-size:$defaultFontSize;
 }
 
 section, div {position:relative;}
 
 
-header, footer, section, div, a{text-align: center;}
+header, footer, section, div, a, table,
+tr, td, th, .table-header {
+	text-align: $defaultTextAlignment;
+}
 
 
 header{ font-weight: bold;}
@@ -15,11 +22,11 @@ header{ font-weight: bold;}
 
 table, tr, td {
 	border:1px solid lightgrey;  border-collapse:collapse;
-	text-align: center;
 }
+
 td{padding:5px;}
 
-th{padding:15px; text-align: center;}
+th{padding:15px;}
 
 a, a:hover {text-decoration:none;}
 
@@ -35,7 +42,7 @@ a, a:hover {text-decoration:none;}
 
 
 .table-header{
-	font-size:30px;  margin-bottom:10px;  text-align: center;
+	font-size:30px;  margin-bottom:10px;
 }
 
 
@@ -66,7 +73,9 @@ a, a:hover {text-decoration:none;}
 .table-and-header{
 	margin:auto;
 
-	table{margin-left:0}
+	table{
+		margin-left:0
+	}
 }
 
 .qty-input{width:50px;}
@@ -95,10 +104,12 @@ a, a:hover {text-decoration:none;}
 	margin:auto;
 	margin-top: 10px;
 
-	div.thumbnail{border:none;}
+	div.thumbnail{
+		border:none;
+	}
 }
 
-#main{display:block;  padding:0; margin:0; margin-bottom: 20px; text-align:center;}
+#main{display:block;  padding:0; margin:0; margin-bottom: 20px;}
 
 #top-banner-greeting{margin:0}
 

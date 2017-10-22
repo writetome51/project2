@@ -6,7 +6,8 @@ body, p {
 section, div {
   position: relative; }
 
-header, footer, section, div, a {
+header, footer, section, div, a, table,
+tr, td, th, .table-header {
   text-align: center; }
 
 header {
@@ -14,15 +15,13 @@ header {
 
 table, tr, td {
   border: 1px solid lightgrey;
-  border-collapse: collapse;
-  text-align: center; }
+  border-collapse: collapse; }
 
 td {
   padding: 5px; }
 
 th {
-  padding: 15px;
-  text-align: center; }
+  padding: 15px; }
 
 a, a:hover {
   text-decoration: none; }
@@ -39,8 +38,7 @@ a, a:hover {
 
 .table-header {
   font-size: 30px;
-  margin-bottom: 10px;
-  text-align: center; }
+  margin-bottom: 10px; }
 
 .banner {
   font-size: 38px;
@@ -112,8 +110,7 @@ a, a:hover {
   display: block;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
-  text-align: center; }
+  margin-bottom: 20px; }
 
 #top-banner-greeting {
   margin: 0; }
