@@ -6,9 +6,6 @@ body, p {
 section, div {
   position: relative; }
 
-/*  Make all divs visible.  Only for debugging your layout:
-div{border:1px solid;}
-*/
 header, footer, section, div, a {
   text-align: center; }
 
@@ -27,10 +24,7 @@ th {
   padding: 15px;
   text-align: center; }
 
-a {
-  text-decoration: none; }
-
-a:hover {
+a, a:hover {
   text-decoration: none; }
 
 /* classes  */
@@ -79,9 +73,8 @@ a:hover {
 
 .table-and-header {
   margin: auto; }
-
-.table-and-header table {
-  margin-left: 5%; }
+  .table-and-header table {
+    margin-left: 0; }
 
 .qty-input {
   width: 50px; }
@@ -89,18 +82,6 @@ a:hover {
 #ice-t-shirt {
   margin: auto;
   margin-bottom: 0; }
-
-#selfie {
-  margin-right: 15px;
-  width: 780px;
-  height: 474px;
-  background-image: url("../images/selfie.jpg"); }
-
-#selfie-text {
-  color: white;
-  position: relative;
-  top: 400px;
-  text-align: center; }
 
 #top-container {
   padding: 4px;
