@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap-3_3_7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/w3.js"></script>
+
     <title>Ice-Tees | T-Shirts | Contact</title>
 </head>
 
@@ -16,19 +16,73 @@
     <div class="container-fluid">
 
         <div class="row  banner"  id="top-banner">
-            <section  w3-include-html="fragments/_top-banner.html"></section>
+            <section>
+                <header><a class="top-banner-link"  href="index.html">ICE-TEES</a></header>
+
+                <a class="top-banner-link" href="index.html">
+                    <img id="ice-t-shirt" src="images/ice-t-shirt.png"
+                         width="125" height="125" alt="Ice-T shirt" />
+                </a>
+            </section>
             <p id="top-banner-greeting">Drop a Line.</p>
         </div>
 
 
-        <div class="row" id="categories-and-main"
-             w3-include-html="fragments/_contact-form_categories-and-main.html">
+        <div class="row" id="categories-and-main">
+            <section class="centered-block">
+
+                <div id="main">
+                    <form method="post">
+                        <div id="first-and-last-name" class="bottom-margin  flex-container">
+                            <div id="first-name">
+                                <label for="firstName">First Name: </label>
+                                <input name="firstName"  id="firstName">
+                            </div>
+
+                            <div id="last-name">
+                                <label for="lastName">Last Name: </label>
+                                <input name="lastName"   id="lastName">
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-margin">
+
+
+                            <label for="email" >Email: </label>
+                            <input  type="email"  name="email" id="email">
+                        </div>
+
+
+                        <div class="bottom-margin">
+
+                        </div>
+
+                        <div class="bottom-margin">
+                            <textarea name="message" rows="7" cols="45"></textarea>
+                        </div>
+
+                        <div class="bottom-margin">
+                            <input type="submit"  value="Submit">
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </section>
         </div>
 
 
 
-        <div class="row  banner"  id="bottom-banner"
-             w3-include-html="fragments/_bottom-banner.html">
+        <div class="row  banner"  id="bottom-banner">
+            <section>
+                <footer>
+                    copyright 2017 by Ice-T and Samuel V. Goldenblum
+                </footer>
+            </section>
+
         </div>
 
     </div>
@@ -36,11 +90,9 @@
 
 </div>
 
-<script>
-    w3.includeHTML();
-</script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="css/bootstrap-3_3_7/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap-3_3_7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/w3.js"></script>
+
     <title>Ice-Tees | T-Shirts | Cereal Box Icons</title>
 </head>
 
@@ -16,29 +15,57 @@
     <div class="container-fluid">
 
         <div class="row  banner"  id="top-banner">
-            <section  w3-include-html="fragments/_top-banner.html"></section>
+            <section>
+                <header><a class="top-banner-link"  href="index.html">ICE-TEES</a></header>
+
+                <a class="top-banner-link" href="index.html">
+                    <img id="ice-t-shirt" src="images/ice-t-shirt.png"
+                         width="125" height="125" alt="Ice-T shirt" />
+                </a>
+            </section>
+
             <p id="top-banner-greeting">You like cereal.</p>
         </div>
 
-        <div class="row"  id="categories-and-main"
-             w3-include-html="fragments/_cereal_categories-and-main.html">
+        <div class="row"  id="categories-and-main">
+            <section class="centered-block">
+                <img class="category-image bottom-margin" src="images/capn-crunch-thumb.jpeg"
+                     width="100" height="100" alt="Capn Crunch"/>
+
+                <div id="main">
+                    <form method="post">
+                        <div class="bottom-margin">
+                            <label  for="quantity">Quantity: </label>
+                            <input type="number" id="quantity" value="1"
+                                   maxlength="1"  class="qty-input">
+                        </div>
+                        <div>
+                            <input type="submit"  value="Buy">
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
         </div>
 
 
-        <div class="row  banner"  id="bottom-banner"
-             w3-include-html="fragments/_bottom-banner.html">
+        <div class="row  banner"  id="bottom-banner">
+            <section>
+                <footer>
+                    copyright 2017 by Ice-T and Samuel V. Goldenblum
+                </footer>
+            </section>
         </div>
 
     </div>
 
-
 </div>
 
-<script>
-    w3.includeHTML();
-</script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="css/bootstrap-3_3_7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
